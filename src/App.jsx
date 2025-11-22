@@ -1,22 +1,23 @@
+import { Routes, Route, Link } from "react-router-dom";
 import PubNavbar from './components/PubNavbar';
-import PubHero from './components/PubHero';
-import PubAbout from './components/PubAbout';
-import PubMenu from './components/PubMenu';
-import PubDrinks from './components/PubDrinks';
-import PubGallery from './components/PubGallery';
-import PubContact from './components/PubContact';
+import Home from './pages/Home';
+import MenuPage from './pages/Menu';
+import DrinksPage from './pages/Drinks';
+import GalleryPage from './pages/Gallery';
+import ContactPage from './pages/Contact';
 
 function App() {
   return (
     <div className="min-h-screen bg-white text-[#0b1c2a]">
       <PubNavbar />
       <main>
-        <PubHero />
-        <PubAbout />
-        <PubMenu />
-        <PubDrinks />
-        <PubGallery />
-        <PubContact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<MenuPage />} />
+          <Route path="/drinks" element={<DrinksPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
       </main>
       <footer className="border-t border-[#0b1c2a]/10 bg-white">
         <div className="max-w-6xl mx-auto px-4 py-10 text-center space-y-2">
