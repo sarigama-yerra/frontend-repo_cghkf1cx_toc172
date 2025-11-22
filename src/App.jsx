@@ -1,27 +1,28 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import WhyChooseUs from './components/WhyChooseUs';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
+import PubNavbar from './components/PubNavbar';
+import PubHero from './components/PubHero';
+import PubAbout from './components/PubAbout';
+import PubMenu from './components/PubMenu';
+import PubDrinks from './components/PubDrinks';
+import PubGallery from './components/PubGallery';
+import PubContact from './components/PubContact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-emerald-950">
-      <Navbar />
+    <div className="min-h-screen bg-white text-[#0b1c2a]">
+      <PubNavbar />
       <main>
-        <Hero />
-        <About />
-        <Services />
-        <WhyChooseUs />
-        <Testimonials />
-        <Contact />
+        <PubHero />
+        <PubAbout />
+        <PubMenu />
+        <PubDrinks />
+        <PubGallery />
+        <PubContact />
       </main>
-      <footer className="border-t border-emerald-100 bg-white">
-        <div className="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-sm text-emerald-900/70">© {new Date().getFullYear()} GreenNest Garden Services. All rights reserved.</p>
-          <p className="text-sm text-emerald-900/70">Local gardening service • Garden maintenance • Lawn care • Eco‑friendly landscaping</p>
+      <footer className="border-t border-[#0b1c2a]/10 bg-white">
+        <div className="max-w-6xl mx-auto px-4 py-10 text-center space-y-2">
+          <p className="font-serif text-lg text-[#0b1c2a]">The Whalebone Inn</p>
+          <p className="text-sm text-[#0b1c2a]/70">Traditional pub dining • Local pub food • Steakhouse • Seafood pub • Family-friendly inn</p>
+          <p className="text-xs text-[#0b1c2a]/50">© {new Date().getFullYear()} The Whalebone Inn. All rights reserved.</p>
         </div>
       </footer>
     </div>
